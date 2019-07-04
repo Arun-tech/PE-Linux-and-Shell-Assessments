@@ -1,0 +1,20 @@
+1)
+
+egrep "xyz" myfile.txt
+egrep -c "xyz" myfile.txt
+
+2)
+
+ls *.txt
+
+3)
+
+for d in ./aws*/ ;do (cd "$d" && ls); done
+
+4)
+
+sed -i 's/word_that_has_to_be_replaced/word_with_which_to_be_replaced/g' myfile.txt |
+
+5)
+
+cat tempjsonfile.json | jq '.Records[0].s3.bucket.arn'
